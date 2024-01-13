@@ -272,3 +272,21 @@ body.dark-mode {
 }
 
 /* ... (remaining CSS code) ... */
+/* ... (previous CSS code) ... */
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ccc; /* Brighter font color in dark mode */
+}
+
+.dark-mode header,
+.dark-mode nav,
+.dark-mode footer {
+    background: linear-gradient(to right, #1a1a1a, #333);
+}
+
+.dark-mode a {
+    color: #57a1d5;
+}
+
+/* ... (remaining CSS code) ... */
