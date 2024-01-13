@@ -1,0 +1,274 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    transition: background-color 0.5s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient(to right, #333, #555);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    color: #57a1d5;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+nav {
+    background: linear-gradient(to right, #444, #666);
+    padding: 10px 0;
+    border-bottom: 1px solid #888;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #57a1d5;
+}
+
+section {
+    padding: 40px 0;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.project {
+    margin-bottom: 40px;
+    animation: slideIn 1s ease-in-out;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-info {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: -20px;
+}
+
+#skills {
+    animation: fadeInDelay 1.5s ease-in-out;
+}
+
+footer {
+    background: linear-gradient(to right, #333, #555);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.dark-mode header,
+.dark-mode nav,
+.dark-mode footer {
+    background: linear-gradient(to right, #1a1a1a, #333);
+}
+
+.dark-mode a {
+    color: #57a1d5;
+}
+/* ... (previous CSS code) ... */
+
+/* Style for the toggle button */
+.toggle-button {
+    background-color: #57a1d5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #4682b4;
+}
+
+.toggle-button.dark-mode {
+    background-color: #1a1a1a;
+}
+
+/* Add animation to the toggle button */
+@keyframes scale {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.toggle-button.active {
+    animation: scale 0.3s ease-in-out alternate;
+}
+
+/* ... (remaining CSS code) ... */
+/* ... (previous CSS code) ... */
+
+/* Style for the toggle button */
+.toggle-button {
+    background-color: #57a1d5;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 50%; /* Make it round */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.toggle-button:hover {
+    background-color: #4682b4;
+}
+
+.toggle-button.dark-mode {
+    background-color: #1a1a1a;
+}
+
+/* Add animation to the toggle button */
+@keyframes scale {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.toggle-button.active {
+    animation: scale 0.3s ease-in-out alternate;
+}
+
+/* ... (remaining CSS code) ... */
+/* ... (previous CSS code) ... */
+
+/* Style for the toggle button */
+.toggle-button {
+    background-color: #57a1d5;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 50%; /* Make it round */
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    outline: none; /* Remove default outline */
+}
+
+.toggle-button:hover {
+    background-color: #4682b4;
+}
+
+.toggle-button.dark-mode {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* Add animation to the toggle button */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.toggle-button.active {
+    animation: rotate 0.8s linear infinite;
+}
+
+/* ... (remaining CSS code) ... */
+/* ... (previous CSS code) ... */
+
+/* Style for the toggle button */
+.toggle-button {
+    background-color: #57a1d5;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 50%; /* Make it round */
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    outline: none; /* Remove default outline */
+}
+
+.toggle-button:hover {
+    background-color: #4682b4;
+}
+
+.toggle-button.dark-mode {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* Add animation to the toggle button */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.toggle-button.active {
+    animation: rotate 0.8s linear infinite;
+}
+
+/* ... (remaining CSS code) ... */
