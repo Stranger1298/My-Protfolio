@@ -3,7 +3,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    transition: background-color 0.5s ease;
+    color: #333;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .container {
@@ -11,8 +12,9 @@ body {
     margin: 0 auto;
 }
 
+/* Header Styles */
 header {
-    background: linear-gradient(to right, #333, #555);
+    background: linear-gradient(to right, #57a1d5, #4e8ec2);
     color: #fff;
     text-align: center;
     padding: 1em 0;
@@ -23,7 +25,6 @@ header h1 {
     font-size: 3em;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
-    color: #57a1d5;
 }
 
 header p {
@@ -31,10 +32,11 @@ header p {
     font-size: 1.2em;
 }
 
+/* Navigation Styles */
 nav {
-    background: linear-gradient(to right, #444, #666);
+    background: linear-gradient(to right, #4e8ec2, #366b8c);
     padding: 10px 0;
-    border-bottom: 1px solid #888;
+    border-bottom: 1px solid #4682b4;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -59,15 +61,49 @@ nav a {
 }
 
 nav a:hover {
-    color: #57a1d5;
+    color: #6e46b4;
 }
+#dark-mode-toggle{
+    position: relative;
+    display: inline;
+    width: 3.75em;
+    height: 2.125em;
+    float: right;
+    /* margin-right: 20px; */
+    margin-top: 1.5rem;
+}
+#dark-mode-toggle {
+    border-radius: 2.125em;
+  }
+  
+  #dark-mode-toggle:before {
+    border-radius: 50%;
+  }
 
-section {
+/* About Me Section Styles */
+section#about {
     padding: 40px 0;
+    text-align: center;
+    background: linear-gradient(to right, #f4f4f4, #e0e0e0);
 }
 
-h1, h2, h3 {
+section#about h2 {
+    font-size: 2.5em;
     color: #333;
+    margin-bottom: 20px;
+}
+
+section#about p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Projects Section Styles */
+section#projects {
+    padding: 40px 0;
+    text-align: center;
+    background: linear-gradient(to right, #e0e0e0, #f4f4f4);
 }
 
 .project {
@@ -86,12 +122,38 @@ h1, h2, h3 {
     margin-top: -20px;
 }
 
-#skills {
-    animation: fadeInDelay 1.5s ease-in-out;
+/* Skills Section Styles */
+section#skills {
+    padding: 40px 0;
+    text-align: center;
+    background: linear-gradient(to right, #f4f4f4, #e0e0e0);
 }
 
+section#skills h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+section#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+section#skills li {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #57a1d5;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* ... Add styles for other sections ... */
+
+/* Footer Styles */
 footer {
-    background: linear-gradient(to right, #333, #555);
+    background: linear-gradient(to right, #57a1d5, #4e8ec2);
     color: #fff;
     text-align: center;
     padding: 1em 0;
@@ -99,7 +161,7 @@ footer {
 
 body.dark-mode {
     background-color: #1a1a1a;
-    color: #fff;
+    color: #ccc;
 }
 
 .dark-mode header,
@@ -111,182 +173,81 @@ body.dark-mode {
 .dark-mode a {
     color: #57a1d5;
 }
+
+.dark-mode section {
+    color: #eee;
+}
 /* ... (previous CSS code) ... */
 
-/* Style for the toggle button */
-.toggle-button {
+#skills li:hover{
+    transform: scale(1.1); 
+}
+
+/* ... (previous CSS code) ... */
+
+/* Project Section Styles */
+section#projects {
+    padding: 40px 0;
+    text-align: center;
+    background: linear-gradient(to right, #e0e0e0, #f4f4f4);
+}
+
+.project {
+    margin-bottom: 40px;
+    animation: slideIn 1s ease-in-out;
+}
+
+.project-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-info {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.project-info h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 8px 16px;
     background-color: #57a1d5;
     color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
+    text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
-.toggle-button:hover {
+.project-link:hover {
     background-color: #4682b4;
 }
 
-.toggle-button.dark-mode {
-    background-color: #1a1a1a;
-}
-
-/* Add animation to the toggle button */
-@keyframes scale {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.1);
-    }
-}
-
-.toggle-button.active {
-    animation: scale 0.3s ease-in-out alternate;
-}
-
 /* ... (remaining CSS code) ... */
-/* ... (previous CSS code) ... */
-
-/* Style for the toggle button */
-.toggle-button {
-    background-color: #57a1d5;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 50%; /* Make it round */
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    position: fixed;
-    top: 20px;
-    right: 20px;
+#education,#experience,#certifications,#achievements,#interests,#contact{
+    padding: 40px 0;
+    text-align: center;
+    background: linear-gradient(to right, #f4f4f4, #e0e0e0);
 }
-
-.toggle-button:hover {
-    background-color: #4682b4;
-}
-
-.toggle-button.dark-mode {
-    background-color: #1a1a1a;
-}
-
-/* Add animation to the toggle button */
-@keyframes scale {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.1);
-    }
-}
-
-.toggle-button.active {
-    animation: scale 0.3s ease-in-out alternate;
-}
-
-/* ... (remaining CSS code) ... */
-/* ... (previous CSS code) ... */
-
-/* Style for the toggle button */
-.toggle-button {
-    background-color: #57a1d5;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    font-size: 1.5em;
-    cursor: pointer;
-    border-radius: 50%; /* Make it round */
-    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    outline: none; /* Remove default outline */
-}
-
-.toggle-button:hover {
-    background-color: #4682b4;
-}
-
-.toggle-button.dark-mode {
-    background-color: #1a1a1a;
-    color: #fff;
-}
-
-/* Add animation to the toggle button */
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.toggle-button.active {
-    animation: rotate 0.8s linear infinite;
-}
-
-/* ... (remaining CSS code) ... */
-/* ... (previous CSS code) ... */
-
-/* Style for the toggle button */
-.toggle-button {
-    background-color: #57a1d5;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    font-size: 1.5em;
-    cursor: pointer;
-    border-radius: 50%; /* Make it round */
-    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    outline: none; /* Remove default outline */
-}
-
-.toggle-button:hover {
-    background-color: #4682b4;
-}
-
-.toggle-button.dark-mode {
-    background-color: #1a1a1a;
-    color: #fff;
-}
-
-/* Add animation to the toggle button */
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.toggle-button.active {
-    animation: rotate 0.8s linear infinite;
-}
-
-/* ... (remaining CSS code) ... */
-/* ... (previous CSS code) ... */
-
-body.dark-mode {
-    background-color: #1a1a1a;
-    color: #ccc; /* Brighter font color in dark mode */
-}
-
-.dark-mode header,
-.dark-mode nav,
-.dark-mode footer {
-    background: linear-gradient(to right, #1a1a1a, #333);
-}
-
-.dark-mode a {
-    color: #57a1d5;
-}
-
-/* ... (remaining CSS code) ... */
