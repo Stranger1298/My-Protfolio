@@ -210,3 +210,48 @@ background-color: rgb(229, 224, 224);
     margin-left: -300px;
     margin-top: -300px;
 }
+
+
+
+
+/* Your existing styles above this line */
+
+/* Media query for screens with a maximum width of 767px (typical for mobile devices) */
+@media only screen and (max-width: 767px) {
+    body {
+      font-size: 16px; /* Adjust font size for better readability on smaller screens */
+    }
+  
+    header h1 {
+      font-size: 2em; /* Adjust heading size for better mobile presentation */
+    }
+  
+    nav li {
+      display: block; /* Stack navigation items vertically on smaller screens */
+      margin: 10px 0;
+    }
+  
+    section#about, section#projects, section#skills, #education, #experience, #certifications, #achievements, #interests, #contact {
+      padding: 20px 0; /* Reduce padding for better spacing on smaller screens */
+    }
+  
+    .project {
+      margin: 20px 0; /* Adjust margin for better spacing on smaller screens */
+    }
+  
+    .about-me {
+      margin-left: 0; /* Adjust margin for better spacing on smaller screens */
+      margin-top: 0;
+    }
+  
+    .boy-img {
+      height: auto; /* Make the image responsive */
+      margin: 0 auto; /* Center the image on smaller screens */
+    }
+  
+    /* Add more adjustments as needed for other elements */
+  
+  }
+  
+  /* Your existing styles below this line */
+  
