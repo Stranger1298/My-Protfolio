@@ -8,16 +8,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-const darkModeToggle = document.getElementById('dark-mode-toggle');
-const body = document.body;
-
-darkModeToggle.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    darkModeToggle.classList.toggle('dark-mode');
-
-    if (darkModeToggle.classList.contains('dark-mode')) {
-        darkModeToggle.innerHTML = '&#127770;'; // Moon symbol in dark mode
-    } else {
-        darkModeToggle.innerHTML = '&#9728;'; // Sun symbol in light mode
-    }
+document.getElementById('resume').addEventListener('click', function() {
+    window.location.href = 'https://drive.google.com/drive/folders/1d5gg1n0EhMHAPNZEz4GiUnunRsu4fC5p?usp=sharing';
 });
