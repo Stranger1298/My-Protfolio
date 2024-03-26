@@ -82,15 +82,13 @@ section#projects {
     text-align: center;
     background: linear-gradient(90deg, rgba(2,0,36,1) 5%, rgba(116,9,121,1) 43%, rgba(0,212,255,1) 97%);
 }
-
-.project {
-    margin-bottom: 40px;
-    transition: 0.3s;
+.card{
+  margin: 10px;
+  width: 18rem; 
+  height: 320px;
 }
-
-.project-info {
-    padding: 20px;
-    margin-top: -20px;
+.card-body{
+  background-color: rgb(96, 218, 255);
 }
 section#skills {
     padding: 40px 0;
@@ -118,66 +116,16 @@ footer {
     padding: 1em 0;
 }
 .project {
-animation: slideIn 1s ease-in-out;
 display: flex;
 display: inline-flex;
-margin-left: 25px;
 margin-top: 20px;
-border-radius: 40px;
-background: rgb(2,0,36);
 }
 
-.project-card {
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-    height: auto;
-    margin: 20px;
-    align-items: center;
-}
 
-.project-info {
-    padding: 20px;
-    background: rgb(138, 134, 225);
-    border-radius: 20px;
-}
-
-.project-info h3 {
-    font-size: 1.7em;
-    color: black;
-}
-
-.project-info p {
-    font-size: 1.6em;
-    color: black;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-.project-link{
-    display: inline-block;
-    padding: 15px 45px;
-    border-radius: 15px;
-    background: #66c6ef71;
-    font-size: 25px;
-    font-weight: 100;
-    text-decoration: none;
-    color: black;
-    transform: translateY(-6px);
-    transition: transform ease 0.1s;
-  }
-.project-link:active {
-    transform: translateY(-4px);
-}
-.project-link:hover {
-    transform: translateY(-2px);
-    background-color: #9f79e2;
-}
 #education,#experience,#certifications,#achievements,#interests,#contact{
     padding: 40px 0;
     text-align: center;
     background: linear-gradient(90deg, rgba(2,0,36,1) 5%, rgba(116,9,121,1) 43%, rgba(0,212,255,1) 97%);
-}
-.project-pic{
-  border-radius: 8px;
 }
 .boy-img {
     height: 305px;
@@ -194,7 +142,9 @@ background: rgb(2,0,36);
 .gmail{
   color: #fff;
 }
-
+.contact> a{
+  margin: 10px;
+}
 #resume{
     width: 70px;
     height: 30px;
@@ -236,38 +186,10 @@ background: rgb(2,0,36);
       height: 100px;
       margin: 0 auto;
     }
-    .project-card {
-        margin: 10px;
-      }
     
-      .project-info {
-        padding: 15px;
-      }
-    
-      .project-info h3 {
-        font-size: 1.4em;
-      }
-    
-      .project-info p {
-        font-size: 1.3em;
-        margin-bottom: 5px;
-      }
-    
-      .project-link {
-        padding: 10px 30px;
-        font-size: 20px;
-      }
-      .project {
-        flex-direction: column;
-        margin-left: 0;
-      }
-      .project-card {
-        margin: 10px 0;
-      }
-    
-      .project-info {
-        padding: 15px;
-        margin-top: 10px;
+    .project {
+      flex-direction: column;
+      margin-left: 0;
       }
     
   }
