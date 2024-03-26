@@ -9,5 +9,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 document.getElementById('resume').addEventListener('click', function() {
-    window.location.href = 'https://drive.google.com/drive/folders/1d5gg1n0EhMHAPNZEz4GiUnunRsu4fC5p?usp=sharing';
+    window.location.href = 'https://drive.google.com/file/d/1YcYZaL3ArwH8FYSUafOQm9hKjVlAr5kP/view?usp=drive_link';
 });
